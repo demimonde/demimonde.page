@@ -8,6 +8,4 @@ COPY build .
 
 ENV NODE_ENV production
 
-CMD [ "yarn", "start" ]
-
 ENTRYPOINT ["node", "build/bin/app.js"]
