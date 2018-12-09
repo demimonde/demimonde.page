@@ -1,0 +1,42 @@
+{
+  "name": "@demimonde/demimonde.page",
+  "version": "0.0.0",
+  "description": "The page where businesses can buy people's Instagram's photographs.",
+  "main": "build",
+  "scripts": {
+    "t": "zoroaster -a",
+    "test": "yarn t test/spec test/mask",
+    "spec": "yarn t test/spec",
+    "mask": "yarn t test/mask",
+    "test-build": "ALAMODE_ENV=test-build yarn test",
+    "start": "node build/bin/app",
+    "lint": "eslint .",
+    "doc": "NODE_DEBUG=doc doc documentary -o README.md",
+    "build": "alamode src -o build -s -i bin/index.js",
+    "dev": "node src/bin"
+  },
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/demimonde/demimonde.page.git"
+  },
+  "keywords": [
+    "demimonde.page",
+    "demimonde"
+  ],
+  "author": "Anton <anton@adc.sh>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demimonde/demimonde.page/issues"
+  },
+  "homepage": "https://github.com/demimonde/demimonde.page#readme",
+  "devDependencies": {
+    "alamode": "1.6.1",
+    "eslint-config-artdeco": "1.0.1"
+  },
+  "dependencies": {
+    "@idio/core": "1.0.2"
+  }
+}
